@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const TreatmentContainer = styled.div`
+  height: 100vh;
+  
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
 
-  border-top: 4px solid ${props => props.theme["green-300"]};
-  
   padding: 5rem 2rem;
 
   text-align: center;

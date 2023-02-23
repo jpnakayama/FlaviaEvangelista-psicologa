@@ -31,5 +31,12 @@ export const FooterDisclaimer = styled.div`
 
   border-top: 1px solid lightgrey;
 
-  padding: 1.5rem 0
+  padding: 1.5rem 0;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem
+  }
 `
