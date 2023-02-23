@@ -1,4 +1,5 @@
-import { HeaderContainer, HeaderContent, HeaderNav, HeaderTitle } from "./styles";
+import { HeaderContainer, HeaderContent, HeaderNav, HeaderTitle, NavLink } from "./styles";
+import { Link } from "react-router-dom"
 
 export function Header() {
   return (
@@ -9,10 +10,10 @@ export function Header() {
           <h4>Psicóloga Clínica | CRP 06/109482</h4>
         </HeaderTitle>
         <HeaderNav>
-          <h3>Sobre Mim</h3>
-          <h3>Atendimento</h3>
-          <h3>Artigos</h3>
-          <h3>Contato</h3>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/sobremim">Sobre Mim</NavLink>
+          <NavLink to="/atendimento">Atendimento</NavLink>
+          <NavLink to="/artigos">Artigos</NavLink>
         </HeaderNav>
 
       </HeaderContent>

@@ -1,6 +1,6 @@
 import { TreatmentCards, TreatmentContainer, TreatmentContent, TreatmentElement } from "./styles";
 
-export function Treatment() {
+export function MyServices() {
   return (
     <TreatmentContainer>
       <TreatmentContent>
