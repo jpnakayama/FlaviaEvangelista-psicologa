@@ -8,7 +8,7 @@ export function AboutMe() {
         <AboutMeContent>
             <AboutMeAvatar src={avatar} alt="" />
             <AboutMeDescription>
-            <h3>SOBRE MIM</h3>
+            <h2>SOBRE MIM</h2>
             <div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at dolor dignissimos fugiat et ipsa ad magnam consequatur cupiditate, aliquam cumque in nihil minima iste voluptas deserunt obcaecati vel quod! </p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at dolor dignissimos fugiat et ipsa ad magnam consequatur cupiditate. </p>

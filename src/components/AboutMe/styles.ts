@@ -41,7 +41,7 @@ export const AboutMeAvatar = styled.img`
 
 export const AboutMeDescription = styled.div`
   
-  h3 {
+  h2 {
     display: inline-block;
 
     margin-bottom: 1rem;
