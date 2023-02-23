@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  background: ${(props) => props.theme['green-300']};
-  padding: 2rem 0rem 1.5rem;
+  background-color: #9090f7;
+  opacity: 0.8;
+  background-image: repeating-radial-gradient( circle at 0 0, transparent 0, #9090f7 10px ), repeating-linear-gradient( #d5d5d555, #d5d5d5 );
+  
+  padding: 3rem 0rem 5rem;
 
-  border-bottom: 1px solid ${(props) => props.theme['green-700']};
+  border-bottom-left-radius: 100px;
 ` 
 
 export const HeaderContent = styled.div`
@@ -14,35 +17,37 @@ export const HeaderContent = styled.div`
   padding: 0 2.5rem;
 
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-`
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
-export const HeaderTitle = styled.div`
-  h1 {
-    font-family: 'Sacramento', cursive;
-    font-size: 3rem;
-  }
-
-  p {
-    margin-top: -0.5rem;
-  }
 `
 
 export const HeaderNav = styled.div`
   display: flex;
-  gap: 3rem;
+  gap: 10rem;
 
+  
   cursor: pointer;
-
+  
   h3 {
     padding: 1rem 0;
+    font-weight: 400;
     
     :hover {
-      border-bottom: 2px solid ${props => props.theme["gold-300"]};
+      font-weight: bold;
     }
   }
-  
-
+    
 `
+
+  export const HeaderTitle = styled.div`
+    margin-top: 2rem;
+    text-align: center;
+    
+    h1 {
+      font-family: 'Sacramento', cursive;
+      font-size: 5rem;
+    }
+  `
 
