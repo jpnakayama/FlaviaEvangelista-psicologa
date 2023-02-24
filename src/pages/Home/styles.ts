@@ -3,7 +3,8 @@ import homeBannerBG from "../../assets/img/homeBannerBG.svg"
 import { AccordionContent, AccordionTrigger } from "@radix-ui/react-accordion";
 
 export const HomeContainer = styled.main`
-  margin: 0;
+  width: 100%;
+  margin: 0 auto 3rem;
 `
 
 export const HomeBanner = styled.section`
@@ -51,6 +52,8 @@ export const HowItWorksSection = styled.section`
   text-align: center;
   color: #fff;
 
+  max-width: 100vw;
+
   h2 {
     padding-bottom: 3rem;
   }
@@ -60,12 +63,12 @@ export const SectionCards = styled.div`
   display: flex;
   gap: 5rem;
 
-  width: 80vw;
+  max-width: 100vw;
   margin: 0 auto;
 
   p {
     background-color: rgba(96,153,102,0.5);
-    max-width: 250px;
+    max-width:  18vw;
     line-height: 2rem;
 
     padding: 3rem 2rem;
@@ -78,6 +81,53 @@ export const SectionCards = styled.div`
       transform: scale(1.02);
       transition: 0.2s;
     }
+  }
+`
+export const ForWhomIsTheTherapy = styled.section`
+  background-color: #fff;
+
+  padding: 5rem;
+  text-align: center;
+  max-width: 100vw;
+
+  h2 {
+    padding-bottom: 3rem;
+    color: #000;
+  }
+
+  img {
+    max-height: 500px;
+  }
+`
+
+export const TherapyContent = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem
+  }
+`
+
+export const TherapyText = styled.p`
+  background-color: rgba(96,153,102,0.5);
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding: 3rem;
+  border-radius: 10px;
+
+  max-width: 20vw;
+
+  :hover {
+      background-color: rgba(96,153,102,0.7);
+      transform: scale(1.02);
+      transition: 0.2s;
   }
 `
 

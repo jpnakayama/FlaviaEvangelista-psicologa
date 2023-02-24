@@ -1,40 +1,29 @@
 import styled from "styled-components";
 
-export const TreatmentContainer = styled.div`
-  height: 100vh;
-  
+export const ServicesContainer = styled.div`
   width: 100%;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
 
   padding: 5rem 2rem;
 
   text-align: center;
 `
 
-export const TreatmentContent = styled.div`
-  h2 {
-    display: inline-block;
-
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-
-    border-bottom: 3px solid black;
-  }
-
+export const ServicesContent = styled.div`
   p {
       line-height: 2rem;
     }
 `
 
-export const TreatmentCards = styled.div`
+export const ServicesCards = styled.div`
   display: flex;
   gap: 2rem;
 
   margin-top: 2rem;
 `
 
-export const TreatmentElement = styled.div`
+export const ServicesElement = styled.div`
   background-color: ${props => props.theme["bg-secondary-color"]};
   border-radius: 4px;
 

@@ -1,30 +1,30 @@
-import { TreatmentCards, TreatmentContainer, TreatmentContent, TreatmentElement } from "./styles";
+import { ServicesCards, ServicesContainer, ServicesContent, ServicesElement } from "./styles";
 
 export function MyServices() {
   return (
-    <TreatmentContainer>
-      <TreatmentContent>
+    <ServicesContainer>
+      <ServicesContent>
         <div>
           <h2>ATENDIMENTO</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at dolor dignissimos fugiat et ipsa ad magnam consequatur cupiditate, aliquam cumque in nihil minima iste voluptas deserunt</p>
         </div>
-        <TreatmentCards>
-          <TreatmentElement>
+        <ServicesCards>
+          <ServicesElement>
             <h3>Adolescentes</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at dolor dignissimos fugiat et ipsa ad magnam consequatur cupiditate, aliquam cumque in nihil minima iste voluptas deserunt</p>
-          </TreatmentElement>
-          <TreatmentElement>
+          </ServicesElement>
+          <ServicesElement>
             <h3>Adultos</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at dolor dignissimos fugiat et ipsa ad magnam consequatur cupiditate, aliquam cumque in nihil minima iste voluptas deserunt</p>
-          </TreatmentElement>
-          <TreatmentElement>
+          </ServicesElement>
+          <ServicesElement>
             <h3>Casais</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at dolor dignissimos fugiat et ipsa ad magnam consequatur cupiditate, aliquam cumque in nihil minima iste voluptas deserunt</p>
-          </TreatmentElement>
-        </TreatmentCards>
+          </ServicesElement>
+        </ServicesCards>
 
-      </TreatmentContent>
+      </ServicesContent>
 
-    </TreatmentContainer>
+    </ServicesContainer>
   )
 }
