@@ -1,7 +1,8 @@
-import { BannerDescription, HomeBanner, HomeContainer, HowItWorksSection, SectionCards } from "./styles";
+import { AnswerItem, BannerDescription, FAQSection, HomeBanner, HomeContainer, HowItWorksSection, QuestionItem, SectionCards } from "./styles";
 import bannerHome from "../../assets/img/bannerHome2.png"
-import { CaretCircleRight } from "phosphor-react"
+import { CaretCircleRight, CaretDown } from "phosphor-react"
 import { GetInTouchButton } from "../../styles/global";
+import * as Accordion from '@radix-ui/react-accordion';
 
 export function Home() {
   return(
@@ -29,6 +30,41 @@ export function Home() {
           <p>Através do avanço das sessões é fortalecido o vínculo entre psicólogo e paciente e vai se desdobrando o trabalho da psicoterapia.</p>
         </SectionCards>
       </HowItWorksSection>
+
+      <section>
+
+      </section>
+
+      <FAQSection>
+        <h2>Perguntas frequentes</h2>
+        <Accordion.Root type="single" collapsible>
+          <Accordion.Item value="item-1">
+            <Accordion.Header>
+              <QuestionItem>Asperiores, odio aspernatur! Lorem ipsum dolor sit amet  ad? <CaretDown size={32} weight="light" /></QuestionItem>
+            </Accordion.Header>
+            <AnswerItem>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, aut soluta voluptatum id asperiores reprehenderit fugit eos ut possimus sapiente repellat ipsum delectus exercitationem, illo sint perferendis excepturi natus est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nulla veritatis dolor voluptatum deserunt incidunt doloribus culpa nesciunt fugit asperiores. Laborum officia aut debitis. Repudiandae enim deserunt libero dicta magnam?</AnswerItem>
+          </Accordion.Item>
+          <Accordion.Item value="item-2">
+            <Accordion.Header>
+              <QuestionItem>Asperiores, odio aspernatur! Lorem ipsum dolor sit amet  ad? <CaretDown size={32} weight="light" /> </QuestionItem>
+            </Accordion.Header>
+            <AnswerItem>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, aut soluta voluptatum id asperiores reprehenderit fugit eos ut possimus sapiente repellat ipsum delectus exercitationem, illo sint perferendis excepturi natus est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nulla veritatis dolor voluptatum deserunt incidunt doloribus culpa nesciunt fugit asperiores. Laborum officia aut debitis. Repudiandae enim deserunt libero dicta magnam?</AnswerItem>
+          </Accordion.Item>
+          <Accordion.Item value="item-3">
+            <Accordion.Header>
+              <QuestionItem>Asperiores, odio aspernatur! Lorem ipsum dolor sit amet  ad? <CaretDown size={32} weight="light" /> </QuestionItem>
+            </Accordion.Header>
+            <AnswerItem>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, aut soluta voluptatum id asperiores reprehenderit fugit eos ut possimus sapiente repellat ipsum delectus exercitationem, illo sint perferendis excepturi natus est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nulla veritatis dolor voluptatum deserunt incidunt doloribus culpa nesciunt fugit asperiores. Laborum officia aut debitis. Repudiandae enim deserunt libero dicta magnam?</AnswerItem>
+          </Accordion.Item>
+          <Accordion.Item value="item-4">
+            <Accordion.Header>
+              <QuestionItem>Asperiores, odio aspernatur! Lorem ipsum dolor sit amet  ad? <CaretDown size={32} weight="light" /> </QuestionItem>
+            </Accordion.Header>
+            <AnswerItem>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, aut soluta voluptatum id asperiores reprehenderit fugit eos ut possimus sapiente repellat ipsum delectus exercitationem, illo sint perferendis excepturi natus est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nulla veritatis dolor voluptatum deserunt incidunt doloribus culpa nesciunt fugit asperiores. Laborum officia aut debitis. Repudiandae enim deserunt libero dicta magnam?</AnswerItem>
+          </Accordion.Item>
+          
+        </Accordion.Root>
+      </FAQSection>
 
     </HomeContainer>
   )
