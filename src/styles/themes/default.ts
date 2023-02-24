@@ -3,10 +3,10 @@ export const defaultTheme = {
 
   'bg-primary-color': '#EDF1D6',
   'bg-secondary-color': '#9DC08B',
-  'bg-card-color': '#ACFBE1',
+  'bg-home-card-color': '#ACFBE1',
 
   'green-700': '#609966',
-  'green-900': '#609966',
+  'green-900': '#40513B',
 
 
   'red-300': '#F75A68',

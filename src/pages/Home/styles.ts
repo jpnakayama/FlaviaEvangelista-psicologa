@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import homeSectionBG from "../../assets/img/homeSectionBG.svg"
 import homeBannerBG from "../../assets/img/homeBannerBG.svg"
-import { AccordionContent, AccordionHeader, AccordionTrigger } from "@radix-ui/react-accordion";
+import { AccordionContent, AccordionTrigger } from "@radix-ui/react-accordion";
 
 export const HomeContainer = styled.main`
-
+  margin: 0;
 `
 
 export const HomeBanner = styled.section`
@@ -14,8 +13,6 @@ export const HomeBanner = styled.section`
   background-repeat: no-repeat;
   
   display: flex;
-  gap: 50px;
-  align-items: center;
   
   width: 75vw;
   margin: 5rem auto;
@@ -25,8 +22,7 @@ export const HomeBanner = styled.section`
 
   div {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
   }
   
   img {
@@ -50,8 +46,6 @@ export const BannerDescription = styled.div`
 
 export const HowItWorksSection = styled.section`
   background-color: ${props => props.theme["bg-secondary-color"]};
-  background-image: url(${homeSectionBG});
-  background-size: cover;
 
   padding: 5rem;
   text-align: center;
@@ -70,7 +64,7 @@ export const SectionCards = styled.div`
   margin: 0 auto;
 
   p {
-    background-color: rgba(10,23,55,0.3);
+    background-color: rgba(96,153,102,0.5);
     max-width: 250px;
     line-height: 2rem;
 
@@ -80,7 +74,9 @@ export const SectionCards = styled.div`
     color: #fff;
     
     :hover {
-      background-color: rgba(10,23,55,0.5);
+      background-color: rgba(96,153,102,0.7);
+      transform: scale(1.02);
+      transition: 0.2s;
     }
   }
 `

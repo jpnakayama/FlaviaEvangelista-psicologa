@@ -1,5 +1,5 @@
 import { FooterContainer, FooterContent, FooterDisclaimer, FooterElement } from "./styles";
-import { InstagramLogo, LinkedinLogo, GithubLogo } from 'phosphor-react'
+import { InstagramLogo, LinkedinLogo, GithubLogo, WhatsappLogo } from 'phosphor-react'
 import { SendMessageButton } from "../Buttons";
 
 export function Footer() {
@@ -35,6 +35,7 @@ export function Footer() {
         <div>
           <a href="https://linkedin.com/in/jpnakayama" target={"_blank"}><LinkedinLogo size={18} color="gray" /></a>
           <a href="https://github.com/jpnakayama" target={"_blank"}><GithubLogo size={18} color="gray" /></a>
+          <a href="https://api.whatsapp.com/send?phone=5519998474750&text=Olá! Gostaria de mais informações sobre o seu trabalho como desenvolvedor. Muito obrigado." target={"_blank"}><WhatsappLogo size={18} color="gray" /></a>
         </div>
         <p>Copyright © 2023. Todos os Direitos Reservados</p>
       </FooterDisclaimer>  

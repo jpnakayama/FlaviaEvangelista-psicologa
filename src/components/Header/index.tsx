@@ -1,5 +1,4 @@
 import { HeaderContainer, HeaderContent, HeaderNav, HeaderTitle, NavLink } from "./styles";
-import { Link } from "react-router-dom"
 
 export function Header() {
   return (

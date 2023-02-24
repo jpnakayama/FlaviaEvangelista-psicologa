@@ -1,17 +1,16 @@
 import styled from "styled-components";
 
 export const WhatsAppBtn = styled.button`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-
+  background: ${props => props.theme["bg-secondary-color"]};
+  color: #FFF;
   padding: 1rem 3rem;
   border: none;
   border-radius: 6px;
 
-  background: ${props => props.theme["bg-secondary-color"]};
-  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 
   width: fit-content;
   cursor: pointer;
@@ -20,23 +19,56 @@ export const WhatsAppBtn = styled.button`
     transform: scale(1.05);
     transition: 0.3s;
   }
-`
 
-export const SendMessage = styled.button`
+  a{
+    text-decoration: none;
+    color: #FFF;
+  }
+  `
+
+export const SendMessageBtn = styled.button`
   background-color: #3fcf6a;
+  color: #FFF;
+  padding: 1rem 2rem;
   border: none;
 
   margin: -3.5rem auto 1rem;
 
-  color: #FFF;
   font-size: 1.5rem;
   font-weight: 700;
-
-  padding: 1rem 2rem;
 
   display: flex;
   align-items: center;
   gap: 1rem;
 
   cursor: pointer;
+
+  a{
+    text-decoration: none;
+    color: #FFF;
+  }
+`
+
+export const TalkToMeBtn = styled.button`
+  background-color: ${props => props.theme["green-700"]};
+  color: #FFF;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 6px;
+  
+  font-size: 1.2rem;
+  
+  width: fit-content;
+  cursor: pointer;
+  
+  :hover {
+    background-color: ${props => props.theme["green-900"]};
+    transform: scale(1.02);
+    transition: 0.3s;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #FFF;
+  }
 `

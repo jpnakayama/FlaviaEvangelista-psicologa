@@ -35,7 +35,7 @@ export const TreatmentCards = styled.div`
 `
 
 export const TreatmentElement = styled.div`
-  background-color: ${props => props.theme["bg-card-color"]};
+  background-color: ${props => props.theme["bg-secondary-color"]};
   border-radius: 4px;
 
   padding: 2rem;
