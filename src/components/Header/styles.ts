@@ -20,9 +20,10 @@ export const HeaderTitle = styled.div`
   }
 
   h4 {
-    margin-top: -0.3rem;
+    margin-top: -0.2rem;
     margin-left: 0.1rem;
     font-weight: 400;
+    font-size: 0.8rem;
   }
 `
 

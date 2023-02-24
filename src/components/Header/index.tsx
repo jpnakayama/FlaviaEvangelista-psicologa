@@ -7,7 +7,7 @@ export function Header() {
       <HeaderContent>
         <HeaderTitle>
           <h1>Flávia Evangelista</h1>
-          <h4>Psicóloga Clínica</h4>
+          <h4>Psicóloga Clínica | CRP 06/109482</h4>
         </HeaderTitle>
         <HeaderNav>
           <NavLink to="/">Home</NavLink>

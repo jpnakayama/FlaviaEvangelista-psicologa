@@ -10,7 +10,7 @@ export const FooterContainer = styled.footer`
 export const FooterContent = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 
   padding: 2rem 0;
 `
@@ -23,6 +23,12 @@ export const FooterElement = styled.div`
 
   h4 {
     font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    line-height: 1.5rem;
   }
 `
 
@@ -32,6 +38,7 @@ export const FooterDisclaimer = styled.div`
   align-items: center;
 
   color: gray;
+  font-size: 0.7rem;
 
   border-top: 1px solid lightgrey;
 
@@ -41,6 +48,6 @@ export const FooterDisclaimer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem
+    gap: 1rem;
   }
 `

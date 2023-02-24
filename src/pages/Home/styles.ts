@@ -14,10 +14,10 @@ export const HomeBanner = styled.section`
   background-repeat: no-repeat;
   
   display: flex;
-  gap: 20px;
+  gap: 50px;
   align-items: center;
   
-  width: 80vw;
+  width: 75vw;
   margin: 5rem auto;
   padding: 5rem;
 
@@ -30,7 +30,7 @@ export const HomeBanner = styled.section`
   }
   
   img {
-    max-width: 600px;
+    max-width: 500px;
     border-radius: 10px;
   }
 `
@@ -39,13 +39,9 @@ export const BannerDescription = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  
-  h2 {
-    font-size: 3rem;
-  }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     gap: 1rem
@@ -63,8 +59,6 @@ export const HowItWorksSection = styled.section`
 
   h2 {
     padding-bottom: 3rem;
-
-    font-size: 3rem;
   }
 `
 
@@ -76,13 +70,18 @@ export const SectionCards = styled.div`
   margin: 0 auto;
 
   p {
-    background-color: rgba(10,23,55,0.5);
+    background-color: rgba(10,23,55,0.3);
     max-width: 250px;
     line-height: 2rem;
 
     padding: 3rem 2rem;
 
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
+    color: #fff;
+    
+    :hover {
+      background-color: rgba(10,23,55,0.5);
+    }
   }
 `
 
@@ -90,10 +89,7 @@ export const FAQSection = styled.section`
   width: 80vw;
   margin: 5rem auto;
 
-
-
   h2 {
-    font-size: 3rem;
     margin-bottom: 2rem;
     text-align: center;
   }
@@ -103,6 +99,8 @@ export const QuestionItem = styled(AccordionTrigger)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  cursor: pointer;
   
   border: none;
   padding: 2rem;

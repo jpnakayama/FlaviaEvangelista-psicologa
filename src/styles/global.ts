@@ -21,22 +21,8 @@ export const GlobalStyle = createGlobalStyle`
   body, input, textarea, button {
     font: 400 1rem Barlow, sans-serif;
   }
-`
 
-export const GetInTouchButton = styled.button`
-  margin-top: 2rem;
-  padding: 1rem 3rem;
-  border: none;
-  border-radius: 6px;
-
-  background: ${props => props.theme["bg-secondary-color"]};
-  color: #FFF;
-
-  width: fit-content;
-  cursor: pointer;
-
-  :hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+  h2 {
+    font-size: 3rem;
   }
 `

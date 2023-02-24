@@ -1,8 +1,8 @@
 import { AnswerItem, BannerDescription, FAQSection, HomeBanner, HomeContainer, HowItWorksSection, QuestionItem, SectionCards } from "./styles";
 import bannerHome from "../../assets/img/bannerHome2.png"
 import { CaretCircleRight, CaretDown } from "phosphor-react"
-import { GetInTouchButton } from "../../styles/global";
 import * as Accordion from '@radix-ui/react-accordion';
+import { WhatsAppButton } from "../../components/Buttons";
 
 export function Home() {
   return(
@@ -14,9 +14,8 @@ export function Home() {
             <p><CaretCircleRight size={28} color="#050505" weight="light" />Psicoterapia individual - adultos e adolescentes</p>
             <p><CaretCircleRight size={28} color="#050505" weight="light" />Psicoterapia para casais</p>
             <p><CaretCircleRight size={28} color="#050505" weight="light" />Atendimentos presenciais e online</p>
-            <div>
-              <GetInTouchButton>Entre em contato</GetInTouchButton>
-            </div>
+            <WhatsAppButton />
+
           </BannerDescription>
           <img src={bannerHome} alt="" />
       </HomeBanner>
