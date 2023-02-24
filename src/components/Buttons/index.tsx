@@ -9,7 +9,7 @@ export function WhatsAppButton() {
 
 export function SendMessageButton() {
   return(
-    <SendMessageBtn><WhatsappLogo size={50} color="#FFF" weight="light" /><a href="https://api.whatsapp.com/send?phone=5519997902311&text=Olá! Gostaria de mais informações sobre o seu atendimento. Muito obrigado." target="_blank">Entre em contato</a></SendMessageBtn>
+    <SendMessageBtn><WhatsappLogo size={50} color="#FFF" weight="light" /><a href="https://api.whatsapp.com/send?phone=5519997902311&text=Olá! Gostaria de mais informações sobre o seu atendimento. Muito obrigado." target="_blank">Agendar consulta</a></SendMessageBtn>
   )
 }
 

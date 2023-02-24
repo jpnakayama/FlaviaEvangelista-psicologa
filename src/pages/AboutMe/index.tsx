@@ -1,12 +1,12 @@
 import { AboutMeContainer, AboutMeContent, AboutMeDescription } from "./styles";
-import avatarImg from "../../assets/img/avatar.png"
+import aboutMe from "../../assets/img/aboutMeIMG.jpg"
 import { TalkToMeButton } from "../../components/Buttons";
 
 export function AboutMe() {
   return (
     <AboutMeContainer>
         <AboutMeContent>
-          <img src={avatarImg} alt="" />
+          <img src={aboutMe} alt="" />
           <AboutMeDescription>
             <p>Olá! Meu nome é Flávia Evangelista.</p>  
             <p> Tenho formação em psicoterapia pela Universidade Federal de São Carlos e atuo como psicóloga clínica desde 2012, atualmente atendendo <strong>adolescentes, adultos e casais</strong>. Obtive o título de psicóloga clínica em 2020, após concluir pós-graduação na área de Psicanálise  intervenção nas instituições no Centro de Estudos e Assistência à Saúde de Campinas / SP.</p>              
