@@ -1,22 +1,18 @@
-import avatar from "../../assets/img/avatar.png"
-import { AboutMeAvatar, AboutMeContainer, AboutMeContent, AboutMeDescription, AvatarContent, GetInTouchButton } from "./styles"
-import {WhatsappLogo} from 'phosphor-react'
+import { GetInTouchButton } from "../../styles/global"
+import { AboutMeContainer, AboutMeContent, AboutMeDescription } from "./styles"
 
 export function AboutMe() {
   return (
     <AboutMeContainer>
         <AboutMeContent>
-            <AboutMeAvatar src={avatar} alt="" />
             <AboutMeDescription>
-            <h2>SOBRE MIM</h2>
             <div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at dolor dignissimos fugiat et ipsa ad magnam consequatur cupiditate, aliquam cumque in nihil minima iste voluptas deserunt obcaecati vel quod! </p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at dolor dignissimos fugiat et ipsa ad magnam consequatur cupiditate. </p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at dolor dignissimos fugiat et ipsa ad magnam consequatur cupiditate, aliquam cumque in nihil minima iste voluptas deserunt. </p>
+              <p>Olá! Meu nome é Flávia Evangelista.</p>                
+              <p> Tenho formação em psicoterapia pela Universidade Federal de São Carlos e atuo como psicóloga clínica desde 2012, atualmente atendendo adolescentes, adultos e casais. Obtive o título de psicóloga clínica em 2020, após concluir pós-graduação na área de Psicanálise e intervenção nas instituições no Centro de Estudos e Assistência à Saúde de Campinas / SP.</p>               
+              <p> Além do atendimento clínico também tenho experiência na área social, especialmente com orientação de famílias e adolescentes, tanto em instituições sociais, quanto no setor público. É uma prática diversa e muito rica do ponto de vista da variedade de experiências e contatos que enriquecem a minha experiência profissional e qualificam o olhar ao outro. Tem alguma dúvida, ou gostaria de mais informações?</p>
             </div>
-            <GetInTouchButton><WhatsappLogo size={32} color="#fff" />Entrar em contato agora</GetInTouchButton>
+            <GetInTouchButton>Entre em contato</GetInTouchButton>
           </AboutMeDescription>
-
         </AboutMeContent>
     </AboutMeContainer>
   )

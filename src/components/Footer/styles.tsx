@@ -20,6 +20,10 @@ export const FooterElement = styled.div`
     display: flex;
     gap: 1rem
   }
+
+  h4 {
+    font-weight: 400;
+  }
 `
 
 export const FooterDisclaimer = styled.div`

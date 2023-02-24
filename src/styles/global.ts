@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   *{
@@ -9,11 +9,11 @@ export const GlobalStyle = createGlobalStyle`
 
   :focus {
     outline: 0;
-    box-shadow: 0 0 0 2px ${(props) => props.theme['gold-500']};
+    box-shadow: 0 0 0 2px ${(props) => props.theme['green-700']};
   }
 
   body {
-    background-color: ${(props) => props.theme['bg-color']};
+    background-color: ${(props) => props.theme['bg-primary-color']};
     color: #000;
     -webkit-font-smoothing: antialiased;
   }
@@ -23,3 +23,20 @@ export const GlobalStyle = createGlobalStyle`
   }
 `
 
+export const GetInTouchButton = styled.button`
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 6px;
+
+  background: ${props => props.theme["bg-secondary-color"]};
+  color: #FFF;
+
+  width: fit-content;
+  cursor: pointer;
+
+  :hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+`
