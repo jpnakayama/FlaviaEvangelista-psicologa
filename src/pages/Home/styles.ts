@@ -105,13 +105,19 @@ export const TherapyContent = styled.div`
   grid-template-columns: 1fr 2fr 1fr;
   gap: 2rem;
 
-  align-items: center;
+  align-items: flex-start;
+
+  p {
+    margin-top: 2rem;
+  }
 
   div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem
+    gap: 2rem;
+
+    margin-top: -3rem;
   }
 `
 
@@ -122,7 +128,7 @@ export const TherapyText = styled.p`
   padding: 3rem;
   border-radius: 10px;
 
-  max-width: 20vw;
+  max-width: 30vw;
 
   :hover {
       background-color: rgba(96,153,102,0.7);
