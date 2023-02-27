@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
+import { MenuProps } from ".";
 
 export const HeaderContainer = styled.header`
   background-color: white;
@@ -27,16 +28,46 @@ export const HeaderTitle = styled.div`
   }
 `
 
-export const HeaderNav = styled.div`
-  display: flex;
-  gap: 5rem;
-  
-  cursor: pointer;
- 
+export const HeaderMenu = styled.div`
+  button {
+    all: unset;
+    position: absolute;
+    top: 0;
+    padding-top: 1rem;
+
+    display: none;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
   `
 
+export const NavMenu = styled.ul<MenuProps>`
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: ${({show}) => show ? 'none' : 'flex'};
+    flex-direction: column;
+    gap: 0;
+
+    position: absolute;
+    right: 0;
+    width: 100%;
+
+    padding: 1rem 2rem;
+
+    background-color: ${props => props.theme["bg-secondary-color"]};
+  }
+`
+
 export const NavLink = styled(Link)`
-  text-decoration: none;
+  all: unset;
 
   color: #000;
   padding: 1rem 0;
@@ -44,7 +75,7 @@ export const NavLink = styled(Link)`
   :hover {
     transform: scale(1.13);
     transition: 0.3s;
-  }
+  } 
 `
 
   
