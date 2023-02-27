@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
 export const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 `
 
 export const HeaderTitle = styled.div`
@@ -31,9 +31,6 @@ export const HeaderTitle = styled.div`
 export const HeaderMenu = styled.div`
   button {
     all: unset;
-    position: absolute;
-    top: 0;
-    padding-top: 1rem;
 
     display: none;
     cursor: pointer;
@@ -52,13 +49,14 @@ export const NavMenu = styled.ul<MenuProps>`
   cursor: pointer;
 
   @media (max-width: 768px) {
-    display: ${({show}) => show ? 'none' : 'flex'};
+    display: ${({show}) => show ? 'flex' : 'none'};
     flex-direction: column;
     gap: 0;
 
     position: absolute;
     right: 0;
-    width: 100%;
+    width: fit-content;
+    margin-top: 1.8rem;
 
     padding: 1rem 2rem;
 
