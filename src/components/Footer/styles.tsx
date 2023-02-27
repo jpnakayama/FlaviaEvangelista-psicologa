@@ -20,7 +20,7 @@ export const FooterContent = styled.div`
       align-items: flex-start;
 
       gap: 2rem;
-    }
+  }
 `
 
 export const FooterElement = styled.div`
@@ -35,8 +35,19 @@ export const FooterElement = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
-
     line-height: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 1rem;
+    }
+    
+    h4 {
+      font-size: 0.8rem;
+      gap: 0.5rem;
+      line-height: 1.2rem;
+    }
   }
 `
 

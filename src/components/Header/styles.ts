@@ -60,7 +60,7 @@ export const NavMenu = styled.ul<MenuProps>`
 
     position: absolute;
     left: 0;
-    width: fit-content;
+    width: 100%;
 
     padding: 1rem 2rem;
 
