@@ -26,6 +26,11 @@ export const HeaderTitle = styled.div`
     font-weight: 400;
     font-size: 0.8rem;
   }
+
+  @media (max-width: 768px) {
+      display: none;
+    }
+
 `
 
 export const HeaderMenu = styled.div`
@@ -54,9 +59,8 @@ export const NavMenu = styled.ul<MenuProps>`
     gap: 0;
 
     position: absolute;
-    right: 0;
+    left: 0;
     width: fit-content;
-    margin-top: 1.8rem;
 
     padding: 1rem 2rem;
 

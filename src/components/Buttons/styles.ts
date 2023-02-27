@@ -43,10 +43,15 @@ export const SendMessageBtn = styled.button`
 
   cursor: pointer;
 
-  a{
+  a {
     text-decoration: none;
     color: #FFF;
   }
+
+  @media (max-width: 768px) {
+      font-size: 1rem;
+      padding: 1rem;
+    }
 `
 
 export const TalkToMeBtn = styled.button`

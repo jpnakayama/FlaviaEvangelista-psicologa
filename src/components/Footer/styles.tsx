@@ -13,6 +13,14 @@ export const FooterContent = styled.div`
   align-items: center;
 
   padding: 2rem 0;
+
+  @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      gap: 2rem;
+    }
 `
 
 export const FooterElement = styled.div`
@@ -50,4 +58,9 @@ export const FooterDisclaimer = styled.div`
     align-items: center;
     gap: 1rem;
   }
+
+  @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
 `
