@@ -95,6 +95,10 @@ export const TextHeader = styled(TabsTrigger)`
     border-top-right-radius: 6px;
     border-left: 1px solid white;
   }
+
+  [data-state='active'] {
+  background-color: black;
+}
 `
 
 export const MobileTextContent = styled(TabsContent)`

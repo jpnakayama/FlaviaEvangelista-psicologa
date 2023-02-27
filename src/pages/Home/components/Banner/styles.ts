@@ -46,11 +46,11 @@ export const BannerDescription = styled.div`
 
   @media (max-width: 786px) {
     h2 {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
 
     p {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
   }
 `
@@ -58,4 +58,14 @@ export const BannerDescription = styled.div`
 export const BannerNameSection = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 786px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
 `
