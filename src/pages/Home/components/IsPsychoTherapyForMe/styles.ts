@@ -5,7 +5,7 @@ export const TherapyContainer = styled.section`
   background-color: #fff;
   width: 100vw;
   padding: 5rem 0;
-  `
+`
 
 export const TherapyTitle = styled.h2`
   text-align: center;
@@ -14,19 +14,15 @@ export const TherapyTitle = styled.h2`
 
 export const TherapyContent = styled.div`
   display: flex;
-  gap: 2rem;
-  align-items: flex-start;
+  align-items: center;
 
-  max-width: 80vw;
+  max-width: 1024px;
   margin: 0 auto;
   text-align: center;
 
-  margin: 0 auto;
-
-
   img {
-    max-height: 40%;
-    max-width: 40%;
+    max-height: 45%;
+    max-width: 45%;
   }
 
   @media (max-width: 786px) {

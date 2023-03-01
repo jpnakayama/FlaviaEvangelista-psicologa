@@ -6,16 +6,16 @@ export const ServicesBannerContainer = styled.section`
 `
 
 export const ServicesBannerContent = styled.div`
+  max-width: 1024px;
   margin: 0 auto;
-  padding: 0 5rem;
   
   display: flex;
   align-items: center;
   justify-content: center;
 
   img {
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: 45%;
   }
 `
 
@@ -34,6 +34,9 @@ export const ServicesBannerCard = styled.div`
   p {
     display: flex;
     align-items: center;
-    gap: 0.5rem
+    gap: 0.5rem;
+
+    font-size: 0.9rem;
+    line-height: 1.5rem
   }
 `
