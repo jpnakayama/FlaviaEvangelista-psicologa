@@ -7,7 +7,7 @@ export function Audience() {
   return(
     <AudienceSectionContainer>
       <AudienceSectionContent>
-        <h2>ATENDIMENTO</h2>
+        <h2>PÚBLICO ATENDIDO</h2>
         <AudienceSectionCard>
           <h3>ADOLESCENTES</h3>
           <AudienceSectionCardContent>

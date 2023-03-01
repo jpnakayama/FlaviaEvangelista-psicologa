@@ -17,7 +17,6 @@ export const BannerContent = styled.div`
   margin: 0 auto;
   
   border-radius: 20px;
-
   
   img {
     width: 55%;

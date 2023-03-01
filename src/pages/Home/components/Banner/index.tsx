@@ -1,5 +1,5 @@
 import { BannerContainer, BannerContent, BannerDescription, BannerNameSection } from "./styles";
-import bannerHome from "../../../../assets/img/bannerHome2.png"
+import bannerHome from "../../../../assets/img/banner-home.png"
 import { CaretCircleRight } from "phosphor-react"
 import { WhatsAppButton } from "../../../../components/Buttons";
 

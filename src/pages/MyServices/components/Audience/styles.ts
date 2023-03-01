@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const AudienceSectionContainer = styled.section`
   width: 100vw;
   padding: 5rem 0;
+
+  background-color: ${props => props.theme["bg-secondary-color"]};
 `
 
 export const AudienceSectionContent = styled.div`
