@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import { AccordionContent, AccordionTrigger } from "@radix-ui/react-accordion";
 
-export const FAQSection = styled.section`
+export const FAQContainer = styled.section`
   width: 80vw;
   margin: 5rem auto;
+`
 
+export const FAQContent = styled.div`
   h2 {
     margin-bottom: 2rem;
     text-align: center;

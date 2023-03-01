@@ -1,32 +1,33 @@
 import styled from "styled-components";
 import { TabsList, TabsTrigger, TabsContent } from "@radix-ui/react-tabs";
 
-export const ForWhomIsTheTherapy = styled.section`
+export const TherapyContainer = styled.section`
   background-color: #fff;
+  width: 100vw;
+  padding: 5rem 0;
+  `
 
-  padding: 5rem;
+export const TherapyTitle = styled.h2`
   text-align: center;
-  max-width: 100vw;
-
-  margin: 0 auto;
-
-  h2 {
-    padding-bottom: 3rem;
-    color: #000;
-  }
-
-  img {
-    max-height: 500px;
-  }
+  padding-bottom: 3rem;
 `
 
 export const TherapyContent = styled.div`
   display: flex;
   gap: 2rem;
-  align-items: center;
+  align-items: flex-start;
 
   max-width: 80vw;
   margin: 0 auto;
+  text-align: center;
+
+  margin: 0 auto;
+
+
+  img {
+    max-height: 40%;
+    max-width: 40%;
+  }
 
   @media (max-width: 786px) {
     flex-direction: column;
@@ -37,6 +38,7 @@ export const TherapyContent = styled.div`
     height: 100%;
   }
 `
+
 
 export const DesktopText = styled.div`
   display: block;

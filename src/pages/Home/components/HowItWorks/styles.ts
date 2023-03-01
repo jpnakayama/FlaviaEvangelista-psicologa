@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const HowItWorksSection = styled.section`
   background-color: ${props => props.theme["bg-secondary-color"]};
 
-  padding: 5rem;
+  padding: 5rem 3rem;
   text-align: center;
   color: #fff;
 

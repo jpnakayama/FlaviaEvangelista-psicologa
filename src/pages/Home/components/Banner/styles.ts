@@ -1,28 +1,27 @@
 import styled from "styled-components"
 import homeBannerBG from "../../../../assets/img/homeBannerBG.svg"
 
-export const HomeBannerStyled = styled.section`
-  background-color: #FFF;
+export const BannerContainer = styled.section`
   background-image: url(${homeBannerBG});
   background-position: bottom;
   background-repeat: no-repeat;
-  
+`
+
+export const BannerContent = styled.div`  
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   
-  width: 80vw;
-  margin: 5rem auto;
-  padding: 5rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 5rem 0;
   
   border-radius: 20px;
-  
-  div {
-    display: flex;
-    justify-content: center;    
-  }
+
   
   img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
   }
   
   @media (max-width: 786px) {
