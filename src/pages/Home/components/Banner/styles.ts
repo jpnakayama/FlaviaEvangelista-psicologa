@@ -5,6 +5,7 @@ export const BannerContainer = styled.section`
   background-image: url(${homeBannerBG});
   background-position: bottom;
   background-repeat: no-repeat;
+  padding: 5rem 0;
 `
 
 export const BannerContent = styled.div`  
@@ -14,14 +15,13 @@ export const BannerContent = styled.div`
   
   max-width: 1024px;
   margin: 0 auto;
-  padding: 5rem 0;
   
   border-radius: 20px;
 
   
   img {
-    width: 50%;
-    height: 50%;
+    width: 55%;
+    height: 55%;
   }
   
   @media (max-width: 786px) {

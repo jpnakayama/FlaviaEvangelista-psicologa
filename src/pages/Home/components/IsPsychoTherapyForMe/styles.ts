@@ -49,7 +49,7 @@ export const DesktopText = styled.div`
 `
 
 export const TherapyText = styled.p`
-  background-color: rgb(172, 251, 225, 0.5);
+  background-color: rgb(157, 192, 139, 0.7);
   font-size: 1rem;
   line-height: 2rem;
   padding: 2rem;
@@ -59,7 +59,7 @@ export const TherapyText = styled.p`
   width: 100%;
   
   :hover {
-      background-color: rgb(172, 251, 225, 0.8);
+      background-color: rgb(157, 192, 139, 1);
       transform: scale(1.02);
       transition: 0.2s;
     }
