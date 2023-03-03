@@ -10,7 +10,7 @@ export function ServicesBanner() {
         <img src={imgAtendimento} alt="" />
         
         <ServiceBannerDescription>
-          <h2>Atendimento de qualquer lugar</h2>
+          <h2>Formas de atendimento</h2>
           <ServicesBannerCard>
             <h3>Atendimento remoto</h3>
             <p><CaretCircleRight size={20} color="#050505" weight="light" />Transpõe a barreira geográfica - não há necessidade de estarmos na mesma cidade</p>

@@ -10,7 +10,7 @@ export function HomeBanner() {
         <BannerDescription>
           <BannerNameSection>
             <h1>Flávia Barbosa Evangelista</h1>
-            <p>Psicóloga Clínica | CRP 06/109482</p>
+            <p>Psicóloga Clínica | CRP 06/109482</p>   
           </BannerNameSection>
           <h2>Cuide de sua saúde mental e bem estar</h2>
           <p><CaretCircleRight size={20} color="#050505" weight="light" />Psicoterapia individual</p>

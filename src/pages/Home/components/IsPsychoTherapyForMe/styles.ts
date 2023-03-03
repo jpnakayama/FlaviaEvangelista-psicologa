@@ -60,7 +60,8 @@ export const MobileText = styled.div`
 
   @media (max-width: 786px) {
     display: block;
-    padding: 1rem 3rem 0;
+    padding: 1rem 0 0;
+    max-width: 60vw;
   }
 `
 
@@ -77,6 +78,9 @@ export const TextHeader = styled(TabsTrigger)`
   align-items: center;
   justify-content: center;
   border: none;
+  border-bottom: 2px solid white;
+
+  color: gray;
   
   :first-child {
     border-top-left-radius: 6px;
@@ -90,14 +94,15 @@ export const TextHeader = styled(TabsTrigger)`
 
   &[data-state='active'] {
     background-color: ${props => props.theme["bg-secondary-color"]};
-    border-bottom: 2px solid white;
+    color: black;
+    border-bottom: none;
     transition: background-color 0.2s;
 }
 `
 
 export const MobileTextContent = styled(TabsContent)`
   flex-grow: 1;
-  padding: 1rem;
+  padding: 2rem;
   line-height: 1.5rem;
   background-color: ${props => props.theme["bg-secondary-color"]};
   border-bottom-left-radius: 6px;

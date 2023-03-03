@@ -50,7 +50,7 @@ export const AudienceSectionCardContent = styled.div`
   align-items: center;
   gap: 1rem;
 
-  text-align: left;
+  text-align: justify;
 
   p {
     font-size: 1.1rem;
@@ -58,7 +58,7 @@ export const AudienceSectionCardContent = styled.div`
   }
 
   img {
-    max-height: 200px;
+    max-height: 300px;
   }
 
   @media (max-width: 786px) {

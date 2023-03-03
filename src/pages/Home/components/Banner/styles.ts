@@ -21,6 +21,10 @@ export const BannerContent = styled.div`
     flex-direction: column;
     max-width: 60vw;
     gap: 1rem;
+
+    img {
+      display: none;
+    }
   }
 `
 
@@ -35,28 +39,22 @@ export const BannerDescription = styled.div`
     align-items: center;
     gap: 1rem
   }
-
-  @media (max-width: 786px) {
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    p {
-      font-size: 1rem;
-    }
-  }
 `
 
 export const BannerNameSection = styled.div`
   display: flex;
   flex-direction: column;
 
+  img {
+    display: none;
+  }
+  
   @media (max-width: 786px) {
-    h1 {
+    div h1 {
       font-size: 1.2rem;
     }
-
-    p {
+    
+    div p {
       font-size: 0.8rem;
     }
   }
