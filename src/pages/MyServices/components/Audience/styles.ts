@@ -16,6 +16,10 @@ export const AudienceSectionContent = styled.div`
   align-items: center;
   
   text-align: center;
+
+  @media (max-width: 786px) {
+    max-width: 80vw;
+  }
 `
 
 export const AudienceSectionCard = styled.div`
@@ -33,6 +37,12 @@ export const AudienceSectionCard = styled.div`
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #000;
   }
+
+  @media (max-width: 786px) {
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
 `
 
 export const AudienceSectionCardContent = styled.div`
@@ -49,5 +59,14 @@ export const AudienceSectionCardContent = styled.div`
 
   img {
     max-height: 200px;
+  }
+
+  @media (max-width: 786px) {
+    flex-direction: column;
+    margin-top: 1rem;
+
+    p {
+      font-size: 0.9rem;
+    }
   }
 `

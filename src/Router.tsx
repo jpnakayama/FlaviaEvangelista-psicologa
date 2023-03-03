@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import { DefaultLayout } from "./layouts/DefaultLayout";
-import { AboutMe } from "./pages/AboutMe";
-import { MyServices } from "./pages/MyServices";
-import { Home } from "./pages/Home";
-import { Articles } from "./pages/Articles";
+import { DefaultLayout } from "layouts/DefaultLayout";
+import { AboutMe } from "pages/AboutMe";
+import { MyServices } from "pages/MyServices";
+import { Home } from "pages/Home";
+import { Articles } from "pages/Articles";
 
 
 export function Router() {

@@ -1,22 +1,16 @@
 import styled from "styled-components"
-import homeBannerBG from "../../../../assets/img/homeBannerBG.svg"
 
 export const BannerContainer = styled.section`
-  background-image: url(${homeBannerBG});
-  background-position: bottom;
-  background-repeat: no-repeat;
   padding: 5rem 0;
 `
 
 export const BannerContent = styled.div`  
+  max-width: 1024px;
+  margin: 0 auto;
+    
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  max-width: 1024px;
-  margin: 0 auto;
-  
-  border-radius: 20px;
   
   img {
     width: 55%;
@@ -25,7 +19,7 @@ export const BannerContent = styled.div`
   
   @media (max-width: 786px) {
     flex-direction: column;
-    width: 90vw;
+    max-width: 60vw;
     gap: 1rem;
   }
 `
@@ -44,7 +38,7 @@ export const BannerDescription = styled.div`
 
   @media (max-width: 786px) {
     h2 {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
 
     p {

@@ -1,6 +1,6 @@
 import { AboutMeContainer, AboutMeContent, AboutMeDescription } from "./styles";
-import aboutMe from "../../assets/img/aboutMeIMG.jpg"
-import { TalkToMeButton } from "../../components/Buttons";
+import aboutMe from "assets/img/aboutMeIMG.jpg"
+import { TalkToMeButton } from "components/Buttons";
 
 export function AboutMe() {
   return (

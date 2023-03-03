@@ -28,13 +28,7 @@ export const TherapyContent = styled.div`
   @media (max-width: 786px) {
     flex-direction: column;
   }
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
 `
-
 
 export const DesktopText = styled.div`
   display: block;
@@ -66,24 +60,24 @@ export const MobileText = styled.div`
 
   @media (max-width: 786px) {
     display: block;
+    padding: 1rem 3rem 0;
   }
 `
 
 export const TextList = styled(TabsList)`
   flex-shrink: 0;
   display: flex;
-  border-bottom: 2px solid white;
-`
+  `
 
 export const TextHeader = styled(TabsTrigger)`
-  background-color: ${props => props.theme["bg-home-card-color"]};
+  background-color: rgb(157, 192, 139, 0.7);
   padding: 1rem;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
-
+  
   :first-child {
     border-top-left-radius: 6px;
     border-right: 2px solid white;
@@ -94,8 +88,10 @@ export const TextHeader = styled(TabsTrigger)`
     border-left: 1px solid white;
   }
 
-  [data-state='active'] {
-  background-color: black;
+  &[data-state='active'] {
+    background-color: ${props => props.theme["bg-secondary-color"]};
+    border-bottom: 2px solid white;
+    transition: background-color 0.2s;
 }
 `
 
@@ -103,7 +99,7 @@ export const MobileTextContent = styled(TabsContent)`
   flex-grow: 1;
   padding: 1rem;
   line-height: 1.5rem;
-  background-color: ${props => props.theme["bg-home-card-color"]};
+  background-color: ${props => props.theme["bg-secondary-color"]};
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 `

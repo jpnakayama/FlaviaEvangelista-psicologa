@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const AboutMeContainer = styled.div`
-  margin: 0 auto 3rem;  
-  padding: 5rem 2rem;
+  padding: 5rem 0;
 `
 
 export const AboutMeContent = styled.div`
@@ -10,7 +9,7 @@ export const AboutMeContent = styled.div`
   border-radius: 10px;
   padding: 5rem;
   margin: 0 auto;
-  max-width: 75vw;
+  max-width: 1024px;
     
   display: flex;
   align-items: center;
@@ -24,17 +23,16 @@ export const AboutMeContent = styled.div`
 export const AboutMeDescription = styled.div`
   background-color: #FFF;
   padding: 3rem;
-  min-width: 40vw;
-  margin-left: -10rem;
+  max-width: 40vw;
+  margin-left: -12rem;
   position: relative;
 
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
-  font-size: 1.2rem;
-  
-  line-height: 2rem;
+  font-size: 1.1rem;  
+  line-height: 1.7rem;
 `
 
 

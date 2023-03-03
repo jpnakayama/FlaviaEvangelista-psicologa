@@ -1,6 +1,6 @@
 import { DesktopText, MobileText, MobileTextContent, TextHeader, TextList, TherapyContainer, TherapyContent, TherapyText, TherapyTitle } from "./styles";
 import * as Tabs from '@radix-ui/react-tabs';
-import mentalHealth from "../../../../assets/img/saudeMental.jpg"
+import mentalHealth from "assets/img/saudeMental.jpg"
 
 export function IsPsychoTherapyForMe() {
   return (

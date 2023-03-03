@@ -17,24 +17,21 @@ export const HowItWorksSection = styled.section`
 export const SectionCards = styled.ul`
   display: flex;
   gap: 5rem;
-
-  max-width: 100vw;
   margin: 0 auto;
-
+  
   @media (max-width: 786px) {
-      flex-direction: row;
-      flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 `
 
 export const CardItem = styled.div`
-    max-width: 100%;
-    line-height: 2rem;
     background-color: rgba(96,153,102,0.5);
     
-    padding: 3rem 2rem;
+    padding: 2rem;
     
-    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
     color: #fff;
     
     li {

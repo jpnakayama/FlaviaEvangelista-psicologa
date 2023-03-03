@@ -1,6 +1,6 @@
 import { FooterContainer, FooterContent, FooterDisclaimer, FooterElement } from "./styles";
 import { InstagramLogo, LinkedinLogo, GithubLogo, WhatsappLogo } from 'phosphor-react'
-import { SendMessageButton } from "../Buttons";
+import { SendMessageButton } from "components/Buttons";
 
 export function Footer() {
   return (
