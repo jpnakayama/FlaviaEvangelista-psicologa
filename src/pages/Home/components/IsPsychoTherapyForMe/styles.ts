@@ -61,7 +61,7 @@ export const MobileText = styled.div`
   @media (max-width: 786px) {
     display: block;
     padding: 1rem 0 0;
-    max-width: 60vw;
+    max-width: 80vw;
   }
 `
 

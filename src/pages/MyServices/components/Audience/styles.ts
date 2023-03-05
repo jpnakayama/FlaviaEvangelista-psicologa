@@ -17,7 +17,7 @@ export const AudienceSectionContent = styled.div`
   
   text-align: center;
 
-  @media (max-width: 786px) {
+  @media (max-width: 768px) {
     max-width: 80vw;
   }
 `
@@ -38,7 +38,7 @@ export const AudienceSectionCard = styled.div`
     border-bottom: 2px solid #000;
   }
 
-  @media (max-width: 786px) {
+  @media (max-width: 768px) {
     h3 {
       font-size: 1.2rem;
     }
@@ -61,12 +61,16 @@ export const AudienceSectionCardContent = styled.div`
     max-height: 300px;
   }
 
-  @media (max-width: 786px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     margin-top: 1rem;
 
     p {
       font-size: 0.9rem;
+    }
+
+    img {
+      max-width: 220px;
     }
   }
 `

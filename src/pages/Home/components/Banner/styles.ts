@@ -17,9 +17,9 @@ export const BannerContent = styled.div`
     height: 55%;
   }
   
-  @media (max-width: 786px) {
+  @media (max-width: 768) {
     flex-direction: column;
-    max-width: 60vw;
+    max-width: 80vw;
     gap: 1rem;
 
     img {
@@ -45,11 +45,11 @@ export const BannerNameSection = styled.div`
   display: flex;
   flex-direction: column;
 
-  img {
-    display: none;
-  }
-  
-  @media (max-width: 786px) {
+  display: none;
+
+  @media (max-width: 768) {
+    display: block;
+    
     div h1 {
       font-size: 1.2rem;
     }
