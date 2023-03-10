@@ -19,23 +19,32 @@ export const TherapyContent = styled.div`
   max-width: 1024px;
   margin: 0 auto;
   text-align: center;
-
-  img {
-    max-height: 45%;
-    max-width: 45%;
-  }
-
-  @media (max-width: 786px) {
+  
+  @media (max-width: 768px) {
     flex-direction: column;
   }
-`
+  `
 
 export const DesktopText = styled.div`
-  display: block;
-
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  
   @media (max-width: 786px) {
     display: none;
   }
+  `
+
+export const DesktopTextContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  
+    img {
+      max-height: 20%;
+      max-width: 20%;
+    }
 `
 
 export const TherapyText = styled.p`
@@ -45,20 +54,22 @@ export const TherapyText = styled.p`
   padding: 2rem;
   margin: 1rem;
   border-radius: 10px;
+
+  text-align: justify;
   
-  width: 100%;
+  width: 30%;
   
   :hover {
       background-color: rgb(157, 192, 139, 1);
       transform: scale(1.02);
       transition: 0.2s;
     }
-    `
+`
 
 export const MobileText = styled.div`
   display: none;
 
-  @media (max-width: 786px) {
+  @media (max-width: 768px) {
     display: block;
     padding: 1rem 0 0;
     max-width: 80vw;

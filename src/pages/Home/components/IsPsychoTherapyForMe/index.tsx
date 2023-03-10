@@ -1,4 +1,4 @@
-import { DesktopText, MobileText, MobileTextContent, TextHeader, TextList, TherapyContainer, TherapyContent, TherapyText, TherapyTitle } from "./styles";
+import { DesktopText, DesktopTextContent, MobileText, MobileTextContent, TextHeader, TextList, TherapyContainer, TherapyContent, TherapyText, TherapyTitle } from "./styles";
 import * as Tabs from '@radix-ui/react-tabs';
 import mentalHealth from "assets/img/saudeMental.jpg"
 
@@ -7,11 +7,19 @@ export function IsPsychoTherapyForMe() {
     <TherapyContainer>
       <TherapyTitle>Para quem é a psicoterapia?</TherapyTitle>
       <TherapyContent>
-          <img src={mentalHealth} alt="" />
           <DesktopText>
-            <TherapyText>Se você sente desinteresse em assuntos e tarefas do cotidiano, desânimo constante e tem dificuldade de manter o foco e a atenção na conclusão de suas atividades a psicoterapia pode te auxiliar.</TherapyText>
-            <TherapyText>Alterações no sono, alimentação e humor também são sinais de atenção para o cuidado psicológico. </TherapyText>
-            <TherapyText>Estar desconfortável consigo mesmo, com suas características físicas ou capacidades de trabalho e de seu relacionar com as pessoas são igualmente campo de atuação da psicoterapia.</TherapyText>
+            <DesktopTextContent>
+              <TherapyText>Se você sente desinteresse em assuntos e tarefas do cotidiano, desânimo constante e tem dificuldade de manter o foco e a atenção na conclusão de suas atividades a psicoterapia pode te auxiliar.</TherapyText>
+              <img src={mentalHealth} alt="" />
+            </DesktopTextContent>
+            <DesktopTextContent>
+              <img src={mentalHealth} alt="" />
+              <TherapyText>Alterações no sono, alimentação e humor também são sinais de atenção para o cuidado psicológico. </TherapyText>
+            </DesktopTextContent>
+            <DesktopTextContent>
+              <TherapyText>Estar desconfortável consigo mesmo, com suas características físicas ou capacidades de trabalho e de seu relacionar com as pessoas são igualmente campo de atuação da psicoterapia.</TherapyText>
+              <img src={mentalHealth} alt="" />
+            </DesktopTextContent>
           </DesktopText>
           <MobileText>
             <Tabs.Root defaultValue="tab1">

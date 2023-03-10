@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Link, NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { MenuProps } from ".";
 
 export const HeaderContainer = styled.header`
@@ -55,8 +55,7 @@ export const NavMenu = styled.div<MenuProps>`
   
   font-size: 1.2rem;
   cursor: pointer;
-  
-  
+    
   @media (max-width: 768px) {
     display: ${({show}) => show ? 'flex' : 'none'};
     flex-direction: column;
@@ -75,7 +74,7 @@ export const NavMenu = styled.div<MenuProps>`
 export const LinkItem = styled(NavLink)`
   all: unset; 
   color: rgba(0,0,0,0.5);
-  padding: 2rem 3rem;
+  padding: 3rem;
 
   &.active {
     font-weight: 700;
@@ -85,7 +84,7 @@ export const LinkItem = styled(NavLink)`
   :hover {
       border-bottom: 3px solid black;
       color: rgba(0,0,0,1);
-      padding-bottom: 29px;
+      padding-bottom: 45px;
     }
 
   @media (max-width: 768px) {
